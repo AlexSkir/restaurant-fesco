@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <link rel="stylesheet" href="./datePicker/datepicker.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/classes.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <title>Fesco</title>
+</head>
+
+<body class="w-100">
+
+  <section class="home relative cover no-repeat image-mask" id="home">
+    <div class="container relative justify-center z-10">
+      <div class="navbar">
+        <button class="navbar__mobile-menu-button" onclick="showMobileNav();"><i class="fas fa-bars"></i></button>
+        <h2 class="navbar__logo f2 fm-yesteryear white">Fesco</h2>
+        <nav class="navbar__nav noselect" id="mobile-nav">
+          <ul class="navbar__list navbar--mobile-menu" id="navbar__list">
+            <li class="navbar__list-item list-item--title">Navigation</li>
+            <li class="navbar__list-item list-item--active"><a href="#home">Home</a></li>
+            <li class="navbar__list-item"><a href="#about">About Us</a></li>
+            <li class="navbar__list-item"><a href="#menu">Menu</a></li>
+            <li class="navbar__list-item"><a href="#reservations">Reservations</a></li>
+            <li class="navbar__list-item"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="title flex flex-column justify-between">
+        <div class="title__icon-wrapper flex justify-center mb50">
+          <img src="./assets/images/Icon.png" alt="Icon">
+        </div>
+        <h1 class="title__heading main-heading taupe nowrap mb10">Making Food Taste Better.</h1>
+        <div class="title__subheading f5 fm-vollkorn white">Italian Specialities</div>
+        <div class="title__text fm-vollkorn f6 white lh-title mt50">
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae
+        </div>
+      </div>
+
+      <div class="contact-info absolute flex flex-column justify-between bg-dark">
+        <div class="info-block-primary">
+          <h4 class="info-block-primary__heading">Contact</h4>
+          <div class="info-block-primary__text">
+            Vestibulum ante ipsum primis in faucibus orciluctus et ultrices posuere cubilia.
+          </div>
+        </div>
+        <div class="info-block-secondary">
+          <h6 class="info-block-secondary__heading">ADDRESS:</h6>
+          <div class="info-block-secondary__text">17 Awesome Street, Belgrade</div>
+          <div class="info-block-secondary__text">SR 877900</div>
+          <button class="text-button f7 fm-vollkorn taupe">view map</button>
+        </div>
+        <div class="info-block-secondary">
+          <h6 class="info-block-secondary__heading">OPENING HOURS:</h6>
+          <div class="info-block-secondary__text mb10">Monday - Friday........................8:00am - 11:00 pm</div>
+          <div class="info-block-secondary__text">Saturday - Sunday......................8:00am - 10:00 pm</div>
+        </div>
+        <button class="outlined-button">Table Reservation</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="about bg-white" id="about">
+    <div class="container relative">
+      <div class="heading-block-about mt100 mb40">
+        <h1 class="main-heading taupe">About Us</h1>
+      </div>
+      <div class="content f6 fm-raleway lh-about warm-gray tc">
+        <div class="content__item mb40">
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+        </div>
+        <div class="content__item mb40">
+          Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Nulla porttitor accumsan
+          tincidunt. Curabitur aliquet quam id dui posuere blandit. Curabitur arcu erat, accumsan id imperdiet et,
+          porttitor at sem. Pellentesque in ipsum id orci porta dapibus. Curabitur arcu erat, accumsan id imperdiet et,
+          porttitor at sem. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur
+          sed, convallis at tellus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Cras ultricies
+          ligula sed magna dictum porta.
+        </div>
+        <div class="content__item mb40">
+          Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, dictum
+          porta.
+        </div>
+      </div>
+      <div class="image-wrapper absolute cover no-repeat"></div>
+    </div>
+  </section>
+
+  <section class="specialties relative cover no-repeat image-mask">
+    <div class="container items-center z-10">
+      <div class="heading-block">
+        <h1 class="heading-block__heading main-heading white">Our Specialities</h1>
+        <div class="heading-block__text white">
+          Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Nulla port or
+          accumsan tincidunt.
+        </div>
+      </div>
+      <ul class="specialties-items flex justify-between flex-wrap w-100">
+        <li class="specialties-items__item">
+          <div class="specialties-items__item__image-wrapper noselect">
+            <img src="./assets/images/specialties/item1.jpg" alt="Lasagna">
+          </div>
+          <div class="specialties-items__item__item-description">
+            Lasagna ............... 19.99$
+          </div>
+        </li>
+        <li class="specialties-items__item">
+          <div class="specialties-items__item__image-wrapper noselect">
+            <img src="./assets/images/specialties/item2.jpg" alt="Lasagna">
+          </div>
+          <div class="specialties-items__item__item-description">
+            Lasagna ............... 19.99$
+          </div>
+        </li>
+        <li class="specialties-items__item">
+          <div class="specialties-items__item__image-wrapper noselect">
+            <img src="./assets/images/specialties/item3.jpg" alt="Lasagna">
+          </div>
+          <div class="specialties-items__item__item-description">
+            Lasagna ............... 19.99$
+          </div>
+        </li>
+        <li class="specialties-items__item">
+          <div class="specialties-items__item__image-wrapper noselect">
+            <img src="./assets/images/specialties/item4.jpg" alt="Lasagna">
+          </div>
+          <div class="specialties-items__item__item-description">
+            Lasagna ............... 19.99$
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="menu bg-dark" id="menu">
+    <div class="container items-center">
+      <div class="heading-block">
+        <h1 class="heading-block__heading main-heading taupe">Our Menu</h1>
+        <div class="heading-block__text white">
+          Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+        </div>
+      </div>
+
+      <div class="content w-100 flex flex-column white fm-raleway">
+        <div class="content__main-item mb50">
+          <h4 class="content__main-item__heading">
+            .......... PIZZA ..........
+          </h4>
+          <div class="content__main-item__items-wrapper flex justify-center-ns flex-wrap">
+            <div class="content__main-item__block">
+
+              <div class="content__sub-block">
+                <h6 class="content__sub-block__header">MEXICANA</h6>
+                <div class="content__sub-block__description">
+                  <div class="sub-block__description__title">
+                    Donec velit neque, auctor sit amet aliquam vel
+                    ullamcorper sit amet ligula.............................
+                  </div>
+                  <h3 class="sub-block__description__price">$19</h3>
+                </div>
+              </div>
+
+              <div class="content__sub-block">
+                <h6 class="content__sub-block__header">MARGHERITA</h6>
+                <div class="content__sub-block__description">
+                  <div class="sub-block__description__title">
+                    Donec velit neque, auctor sit amet aliquam vel
+                    ullamcorper sit amet ligula.............................
+                  </div>
+                  <h3 class="sub-block__description__price">$16</h3>
+                </div>
+              </div>
+
+              <div class="content__sub-block">
+                <h6 class="content__sub-block__header">HAWAIAN</h6>
+                <div class="content__sub-block__description">
+                  <div class="sub-block__description__title">
+                    Donec velit neque, auctor sit amet aliquam vel
+                    ullamcorper sit amet ligula.............................
+                  </div>
+                  <h3 class="sub-block__description__price">$18</h3>
+                </div>
+              </div>
+
+              <div class="content__sub-block">
+                <h6 class="content__sub-block__header">CHICKEN</h6>
+                <div class="content__sub-block__description">
+                  <div class="sub-block__description__title">
+                    Donec velit neque, auctor sit amet aliquam vel
+                    ullamcorper sit amet ligula.............................
+                  </div>
+                  <h3 class="sub-block__description__price">$14</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="content__main-item__block">
+
+              <div class="content__sub-block">
+                <h6 class="content__sub-block__header">MEXICANA</h6>
+                <div class="content__sub-block__description">
+                  <div class="sub-block__description__title">
+                    Donec velit neque, auctor sit amet aliquam vel
+                    ullamcorper sit amet ligula.............................
+                  </div>
+                  <h3 class="sub-block__description__price">$19</h3>
+                </div>
+              </div>
+
+              <div class="content__sub-block">
+                <h6 class="content__sub-block__header">MARGHERITA</h6>
+                <div class="content__sub-block__description">
+                  <div class="sub-block__description__title">
+                    Donec velit neque, auctor sit amet aliquam vel
+                    ullamcorper sit amet ligula.............................
+                  </div>
+                  <h3 class="sub-block__description__price">$16</h3>
+                </div>
+              </div>
+
+              <div class="content__sub-block">
+                <h6 class="content__sub-block__header">HAWAIAN</h6>
+                <div class="content__sub-block__description">
+                  <div class="sub-block__description__title">
+                    Donec velit neque, auctor sit amet aliquam vel
+                    ullamcorper sit amet ligula.............................
+                  </div>
+                  <h3 class="sub-block__description__price">$18</h3>
+                </div>
+              </div>
+
+              <div class="content__sub-block">
+                <h6 class="content__sub-block__header">CHICKEN</h6>
+                <div class="content__sub-block__description">
+                  <div class="sub-block__description__title">
+                    Donec velit neque, auctor sit amet aliquam vel
+                    ullamcorper sit amet ligula.............................
+                  </div>
+                  <h3 class="sub-block__description__price">$14</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content__main-item mb50">
+          <h4 class="content__main-item__heading">
+            .......... DESSERTS ..........
+          </h4>
+          <div class="content__main-item__items-wrapper flex justify-center-ns flex-wrap">
+            <div class="content__main-item__block">
+
+              <div class="content__sub-block">
+                <h6 class="content__sub-block__header">CHOCOLATE HAZELNUT CHEESECAKE</h6>
+                <div class="content__sub-block__description">
+                  <div class="sub-block__description__title">
+                    Donec velit neque, auctor sit amet aliquam vel
+                    ullamcorper sit amet ligula.............................
+                  </div>
+                  <h3 class="sub-block__description__price">$7</h3>
+                </div>
+              </div>
+
+              <div class="content__sub-block">
+                <h6 class="content__sub-block__header">BANOFFEE TIRAMISU</h6>
+                <div class="content__sub-block__description">
+                  <div class="sub-block__description__title">
+                    Donec velit neque, auctor sit amet aliquam vel
+                    ullamcorper sit amet ligula.............................
+                  </div>
+                  <h3 class="sub-block__description__price">$11</h3>
+                </div>
+              </div>
+
+              <div class="content__sub-block">
+                <h6 class="content__sub-block__header">STICKY TOFFEE PUDDING</h6>
+                <div class="content__sub-block__description">
+                  <div class="sub-block__description__title">
+                    Donec velit neque, auctor sit amet aliquam vel
+                    ullamcorper sit amet ligula.............................
+                  </div>
+                  <h3 class="sub-block__description__price">$13</h3>
+                </div>
+              </div>
+
+              <div class="content__sub-block">
+                <h6 class="content__sub-block__header">PANNA COTTAS</h6>
+                <div class="content__sub-block__description">
+                  <div class="sub-block__description__title">
+                    Donec velit neque, auctor sit amet aliquam vel
+                    ullamcorper sit amet ligula.............................
+                  </div>
+                  <h3 class="sub-block__description__price">$14</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="content__main-item__block">
+
+              <div class="content__sub-block">
+                <h6 class="content__sub-block__header">CHOCOLATE HAZELNUT CHEESECAKE</h6>
+                <div class="content__sub-block__description">
+                  <div class="sub-block__description__title">
+                    Donec velit neque, auctor sit amet aliquam vel
+                    ullamcorper sit amet ligula.............................
+                  </div>
+                  <h3 class="sub-block__description__price">$7</h3>
+                </div>
+              </div>
+
+              <div class="content__sub-block">
+                <h6 class="content__sub-block__header">BANOFFEE TIRAMISU</h6>
+                <div class="content__sub-block__description">
+                  <div class="sub-block__description__title">
+                    Donec velit neque, auctor sit amet aliquam vel
+                    ullamcorper sit amet ligula.............................
+                  </div>
+                  <h3 class="sub-block__description__price">$11</h3>
+                </div>
+              </div>
+
+              <div class="content__sub-block">
+                <h6 class="content__sub-block__header">STICKY TOFFEE PUDDING</h6>
+                <div class="content__sub-block__description">
+                  <div class="sub-block__description__title">
+                    Donec velit neque, auctor sit amet aliquam vel
+                    ullamcorper sit amet ligula.............................
+                  </div>
+                  <h3 class="sub-block__description__price">$13</h3>
+                </div>
+              </div>
+
+              <div class="content__sub-block">
+                <h6 class="content__sub-block__header">PANNA COTTAS</h6>
+                <div class="content__sub-block__description">
+                  <div class="sub-block__description__title">
+                    Donec velit neque, auctor sit amet aliquam vel
+                    ullamcorper sit amet ligula.............................
+                  </div>
+                  <h3 class="sub-block__description__price">$14</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="contained-button mb75">View All Menu</button>
+    </div>
+  </section>
+
+  <section class="booking relative cover bg-center image-mask" id="reservations">
+    <div class="container items-center z-10">
+      <div class="heading-block">
+        <h1 class="heading-block__heading main-heading taupe">Book a Table</h1>
+        <div class="heading-block__text white">
+          Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+        </div>
+      </div>
+
+      <div class="input-block w-100 flex justify-between mb30 noselect">
+        <div class="input-block__item fm-raleway">
+          <h6 class="input-block__item__heading f6 white">CHOOSE A DATE</h6>
+          <div class="input-block__item__input input--date">
+            <input class="noselect" type="text" id="input-date">
+          </div>
+        </div>
+        <div class="input-block__item fm-raleway">
+          <h6 class="input-block__item__heading f6 white">CHOOSE A TIME</h6>
+          <div class="input-block__item__input input--select">
+            <div class="selected" id="selected-time" tabindex="2" onclick="showOptions('booking-time')">8.00pm
+            </div>
+            <div class="radio-buttons-wrapper hidden" id="booking-time">
+              <label class="radio-button">
+                <input class="hidden" type="radio" name="booking-time" id="6.00pm"
+                  onclick="selectOption(event, 'selected-time', 'booking-time')">
+                <span class="radio-button__label">6.00pm</span>
+              </label>
+              <label class="radio-button">
+                <input class="hidden" type="radio" name="booking-time" id="7.00pm"
+                  onclick="selectOption(event, 'selected-time', 'booking-time')">
+                <span class="radio-button__label">7.00pm</span>
+              </label>
+              <label class="radio-button">
+                <input class="hidden" type="radio" name="booking-time" id="8.00pm" checked="checked"
+                  onclick="selectOption(event, 'selected-time', 'booking-time')">
+                <span class="radio-button__label">8.00pm</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="input-block__item fm-raleway">
+          <h6 class="input-block__item__heading f6 white">NUMBER OF PEOPLE</h6>
+          <div class="input-block__item__input input--select">
+            <div class="selected" id="selected-people" tabindex="3" onclick="showOptions('booking-people')">2
+              people</div>
+            <div class="radio-buttons-wrapper hidden" id="booking-people">
+              <label class="radio-button">
+                <input class="hidden" type="radio" name="booking-people" id="1 person"
+                  onclick="selectOption(event, 'selected-people', 'booking-people')">
+                <span class="radio-button__label">1 person</span>
+              </label>
+              <label class="radio-button">
+                <input class="hidden" type="radio" name="booking-people" id="2 people" checked="checked"
+                  onclick="selectOption(event, 'selected-people', 'booking-people')">
+                <span class="radio-button__label">2 people</span>
+              </label>
+              <label class="radio-button">
+                <input class="hidden" type="radio" name="booking-people" id="3+ people"
+                  onclick="selectOption(event, 'selected-people', 'booking-people')">
+                <span class="radio-button__label">3+ people</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="contained-button mb75">Book now</button>
+    </div>
+  </section>
+
+  <section class="footer bg-dark" id="contact">
+    <div class="container justify-around">
+      <div class="contact-block flex flex-wrap justify-between mt20">
+
+        <div class="contact__item info-block-secondary">
+          <h6 class="info-block-secondary__heading">ADDRESS:</h6>
+          <div class="info-block-secondary__text">17 Awesome Street, Belgrade</div>
+          <div class="info-block-secondary__text mb10">SR 877900</div>
+          <button class="outlined-button f7 fm-vollkorn">view map</button>
+        </div>
+
+        <div class="contact__item info-block-secondary contact__item--booking">
+          <h6 class="info-block-secondary__heading">OPENING HOURS:</h6>
+          <div class="info-block-secondary__text">
+            Monday - Friday......................................8:00am - 11:00pm
+          </div>
+          <div class="info-block-secondary__text mb10">
+            Monday - Friday......................................8:00am - 11:00pm
+          </div>
+          <button class="outlined-button f7 fm-vollkorn">Table Reservation</button>
+        </div>
+
+        <div class="contact__item info-block-secondary contact__item--social">
+          <h6 class="info-block-secondary__heading">WE ARE SOCIAL:</h6>
+          <div class="info-block-secondary__text">Feel free to check our social media pages</div>
+          <div class="social-buttons flex justify-between">
+            <button class="social-buttons__btn outlined-button f7 fm-vollkorn">
+              <img src="./assets/images/social/fb.png" alt="pic">
+            </button>
+            <button class="social-buttons__btn outlined-button f7 fm-vollkorn">
+              <img src="./assets/images/social/tw.png" alt="pic">
+            </button>
+            <button class="social-buttons__btn outlined-button f7 fm-vollkorn">
+              <img src="./assets/images/social/gg.png" alt="pic">
+            </button>
+            <button class="social-buttons__btn outlined-button f7 fm-vollkorn">
+              <img src="./assets/images/social/yt.png" alt="pic">
+            </button>
+          </div>
+        </div>
+
+      </div>
+      <div class="rights f6 fm-raleway taupe mb20">
+        © 2017 - Fesco All Right Reserved
+      </div>
+    </div>
+  </section>
+
+  <script src="./datePicker/datepicker.min.js"></script>
+  <script>
+    document.body.addEventListener('click', event => {
+      if (!event.target.parentNode.classList.contains('navbar__mobile-menu-button')) {
+        if (document.getElementById('mobile-nav').classList.contains('active-nav')) {
+          document.getElementById('mobile-nav').classList.remove('active-nav');
+        }
+      }
+      if (!event.target.parentNode.classList.contains('radio-button')
+        && !event.target.classList.contains('selected')) {
+        const optionsBlocks = Array.from(document.getElementsByClassName('radio-buttons-wrapper'));
+
+        optionsBlocks.forEach(item => {
+          if (!item.classList.contains('hidden')) {
+            item.classList.add('hidden');
+          }
+        });
+      }
+    });
+
+    document.getElementById('navbar__list').addEventListener('click', event => {
+      const links = Array.from(event.currentTarget.children);
+      links.forEach(item => {
+        if (item.classList.contains('list-item--active')) {
+          item.classList.remove('list-item--active');
+        }
+      });
+      event.target.parentNode.classList.add('list-item--active');
+    });
+
+    function showMobileNav() {
+      document.getElementById('mobile-nav').classList.toggle('active-nav')
+    }
+
+    function selectOption(event, textField, optionBlock) {
+      document.getElementById(textField).innerText = event.target.id;
+      if (!document.getElementById(optionBlock).classList.contains('hidden')) {
+        document.getElementById(optionBlock).classList.add('hidden');
+      }
+    }
+
+    function showOptions(id) {
+      const optionsBlock = document.getElementById(id);
+      optionsBlock.classList.toggle('hidden');
+    }
+
+    function maxDate() {
+      let maxMonth = new Date().getMonth() + 1;
+      let setMaxMonth = new Date().setMonth(maxMonth)
+      return new Date(setMaxMonth);
+    }
+
+    const picker = datepicker('#input-date', {
+      minDate: new Date(),
+      maxDate: maxDate(),
+      formatter: (input, date, instance) => {
+        const value = date.toLocaleDateString()
+        input.value = value.split('.').join('/')
+      },
+      startDay: 1
+    })
+    picker.setDate(new Date(), true);
+  </script>
+</body>
+
+</html>

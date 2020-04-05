@@ -1,0 +1,22 @@
+{
+  "name": "restaurant-fesco",
+  "homepage": "http://AlexSkir.github.io/restaurant-fesco/",
+  "version": "1.0.0",
+  "description": "one-page website of restaurant Fesco",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss --o css",
+    "deploy": "gh-pages -d src"
+  },
+  "author": "AlexSkir",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^2.2.0",
+    "js-datepicker": "^5.6.0",
+    "node-sass": "^4.13.1"
+  },
+  "devDependencies": {
+    "tachyons": "^4.10.0"
+  }
+}
