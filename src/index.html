@@ -379,17 +379,17 @@
             </div>
             <div class="select__wrapper hidden" id="booking-time">
               <label class="select__item">
-                <input class="select__input hidden" type="radio" name="booking-time" id="6.00pm"
+                <input class="select__input hidden" type="radio" name="booking-time" value="6.00pm"
                   onclick="selectOption(event, 'selected-time', 'booking-time')">
                 <span class="select__label">6.00pm</span>
               </label>
               <label class="select__item">
-                <input class="select__input hidden" type="radio" name="booking-time" id="7.00pm"
+                <input class="select__input hidden" type="radio" name="booking-time" value="7.00pm"
                   onclick="selectOption(event, 'selected-time', 'booking-time')">
                 <span class="select__label">7.00pm</span>
               </label>
               <label class="select__item">
-                <input class="select__input hidden" type="radio" name="booking-time" id="8.00pm" checked="checked"
+                <input class="select__input hidden" type="radio" name="booking-time" value="8.00pm" checked="checked"
                   onclick="selectOption(event, 'selected-time', 'booking-time')">
                 <span class="select__label">8.00pm</span>
               </label>
@@ -405,17 +405,17 @@
             </div>
             <div class="select__wrapper hidden" id="booking-people">
               <label class="select__item">
-                <input class="select__input hidden" type="radio" name="booking-people" id="1 person"
+                <input class="select__input hidden" type="radio" name="booking-people" value="1 person"
                   onclick="selectOption(event, 'selected-people', 'booking-people')">
                 <span class="select__label">1 person</span>
               </label>
               <label class="select__item">
-                <input class="select__input hidden" type="radio" name="booking-people" id="2 people" checked="checked"
-                  onclick="selectOption(event, 'selected-people', 'booking-people')">
+                <input class="select__input hidden" type="radio" name="booking-people" value="2 people"
+                  checked="checked" onclick="selectOption(event, 'selected-people', 'booking-people')">
                 <span class="select__label">2 people</span>
               </label>
               <label class="select__item">
-                <input class="select__input hidden" type="radio" name="booking-people" id="3+ people"
+                <input class="select__input hidden" type="radio" name="booking-people" value="3+ people"
                   onclick="selectOption(event, 'selected-people', 'booking-people')">
                 <span class="select__label">3+ people</span>
               </label>
@@ -511,7 +511,7 @@
     }
 
     function selectOption(event, textField, optionBlock) {
-      document.getElementById(textField).innerText = event.target.id;
+      document.getElementById(textField).innerText = event.target.value;
       if (!document.getElementById(optionBlock).classList.contains('hidden')) {
         document.getElementById(optionBlock).classList.add('hidden');
       }
