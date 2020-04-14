@@ -701,3 +701,23 @@ button {
     margin-left: 40px; }
   .booking {
     background-position-x: 40%; } }
+
+.reference {
+  background: radial-gradient(circle, #6188ED 0%, #7E4AAD 100%);
+}
+.reference__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  font-family: 'Vollkorn', serif;
+  color: #ffffff;
+}
+.reference__link {
+  padding: 10px;
+  margin-left: 20px;
+}
+.reference__logo path {
+  fill: #ffffff;
+}
