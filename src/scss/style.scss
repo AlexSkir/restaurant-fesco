@@ -596,6 +596,26 @@ button {
   @extend %font-stack-raleway;
 }
 
+.reference {
+  background: radial-gradient(circle, #6188ED 0%, #7E4AAD 100%);
+}
+.reference__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  color: #ffffff;
+  @extend %font-stack-vollkorn;
+}
+.reference__link {
+  padding: 10px;
+  margin-left: 20px;
+}
+.reference__logo path {
+  fill: #ffffff;
+}
+
 /*******************************************Media quires********************************************/
 @media all and (max-width: 940px) {
   .container {
